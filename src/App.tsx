@@ -11,10 +11,12 @@ import { Footer } from './components/Footer';
 import { FloatingThemeToggle } from './components/FloatingThemeToggle';
 import { CustomCursor } from './components/CustomCursor';
 import { ScrollProgress } from './components/ScrollProgress';
+import { GlobalAudioListener } from './components/GlobalAudioListener';
 
 export default function App() {
   return (
     <ThemeProvider>
+      <GlobalAudioListener />
       <div className="relative min-h-screen text-[var(--text-main)] selection:bg-[#DEDBC8] selection:text-black font-sans antialiased transition-colors duration-300">
         {/* Scroll Progress Bar & Floating Top Button */}
         <ScrollProgress />
