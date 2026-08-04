@@ -19,11 +19,17 @@ export function ProfileDetailsSection() {
             initial={{ y: 30, opacity: 0 }}
             animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="bg-[var(--bg-card)] backdrop-blur-xl p-6 sm:p-8 rounded-3xl border border-[var(--border-subtle)] shadow-2xl flex flex-col justify-between"
+            className="bg-[var(--bg-card)] backdrop-blur-xl p-6 sm:p-8 rounded-3xl border border-[var(--border-subtle)] hover:border-indigo-500/50 shadow-xl hover:shadow-indigo-500/15 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 relative overflow-hidden"
           >
-            <div>
-              <div className="flex items-center gap-2 text-primary font-mono text-xs uppercase tracking-widest mb-6">
-                <Languages className="w-4 h-4" />
+            {/* Top Gradient Line */}
+            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-500 via-indigo-400 to-cyan-400 opacity-90 group-hover:opacity-100 transition-opacity" />
+            <div className="absolute -top-24 -right-24 w-48 h-48 bg-gradient-to-br from-indigo-500/20 via-blue-500/10 to-transparent rounded-full blur-2xl pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
+
+            <div className="relative z-10">
+              <div className="flex items-center gap-2.5 text-indigo-600 dark:text-indigo-400 font-mono text-xs uppercase tracking-widest mb-6 font-semibold">
+                <div className="p-2 rounded-xl bg-indigo-500/15 border border-indigo-500/30">
+                  <Languages className="w-4 h-4 text-indigo-500" />
+                </div>
                 <span>Languages Proficiency</span>
               </div>
 
@@ -31,13 +37,13 @@ export function ProfileDetailsSection() {
                 {profileData.languages.map((lang) => (
                   <div
                     key={lang.language}
-                    className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 p-3.5 rounded-xl bg-[var(--bg-card-hover)] border border-[var(--border-subtle)]"
+                    className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 p-3.5 rounded-2xl bg-[var(--bg-card-hover)] border border-[var(--border-subtle)] hover:border-indigo-500/40 transition-all duration-200 shadow-sm"
                   >
-                    <span className="text-sm font-medium text-[var(--text-main)] flex items-center gap-2">
-                      <Check className="w-3.5 h-3.5 text-primary shrink-0" />
+                    <span className="text-sm font-medium text-[var(--text-main)] flex items-center gap-2.5">
+                      <Check className="w-4 h-4 text-indigo-500 shrink-0" />
                       {lang.language}
                     </span>
-                    <span className="text-xs font-mono text-[var(--text-muted)]">{lang.level}</span>
+                    <span className="text-xs font-mono text-indigo-600 dark:text-indigo-300 bg-indigo-500/15 px-3 py-1 rounded-full border border-indigo-500/30 font-semibold">{lang.level}</span>
                   </div>
                 ))}
               </div>
@@ -49,11 +55,17 @@ export function ProfileDetailsSection() {
             initial={{ y: 30, opacity: 0 }}
             animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
             transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-            className="bg-[var(--bg-card)] backdrop-blur-xl p-6 sm:p-8 rounded-3xl border border-[var(--border-subtle)] shadow-2xl flex flex-col justify-between"
+            className="bg-[var(--bg-card)] backdrop-blur-xl p-6 sm:p-8 rounded-3xl border border-[var(--border-subtle)] hover:border-rose-500/50 shadow-xl hover:shadow-rose-500/15 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 relative overflow-hidden"
           >
-            <div>
-              <div className="flex items-center gap-2 text-primary font-mono text-xs uppercase tracking-widest mb-6">
-                <Heart className="w-4 h-4" />
+            {/* Top Gradient Line */}
+            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-rose-500 via-pink-400 to-amber-400 opacity-90 group-hover:opacity-100 transition-opacity" />
+            <div className="absolute -top-24 -right-24 w-48 h-48 bg-gradient-to-br from-rose-500/20 via-pink-500/10 to-transparent rounded-full blur-2xl pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
+
+            <div className="relative z-10">
+              <div className="flex items-center gap-2.5 text-rose-600 dark:text-rose-400 font-mono text-xs uppercase tracking-widest mb-6 font-semibold">
+                <div className="p-2 rounded-xl bg-rose-500/15 border border-rose-500/30">
+                  <Heart className="w-4 h-4 text-rose-500" />
+                </div>
                 <span>Personal Interests & Activities</span>
               </div>
 
@@ -65,9 +77,9 @@ export function ProfileDetailsSection() {
                 {profileData.hobbies.map((hobby) => (
                   <span
                     key={hobby}
-                    className="px-4 py-2 rounded-2xl bg-[var(--bg-card-hover)] border border-[var(--border-subtle)] text-xs sm:text-sm text-[var(--text-main)] font-mono flex items-center gap-2 hover:border-primary/40 transition-colors"
+                    className="px-4 py-2 rounded-2xl bg-[var(--bg-card-hover)] border border-[var(--border-subtle)] text-xs sm:text-sm text-[var(--text-main)] font-mono flex items-center gap-2 hover:border-rose-500/40 hover:bg-rose-500/15 transition-all duration-200 shadow-sm"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                    <span className="w-2 h-2 rounded-full bg-rose-500 shadow-sm" />
                     {hobby}
                   </span>
                 ))}

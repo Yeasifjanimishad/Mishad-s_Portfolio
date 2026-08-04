@@ -9,43 +9,53 @@ export function Footer() {
         {/* Contact Form & Quick Info Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left: Contact Info & Socials */}
-          <div className="lg:col-span-5 flex flex-col gap-6 bg-[var(--bg-card)] backdrop-blur-2xl p-8 rounded-3xl border border-[var(--border-subtle)] shadow-2xl h-full justify-between">
-            <div>
-              <span className="text-[10px] sm:text-xs uppercase tracking-widest text-primary font-mono block mb-2">
-                Contact & Opportunities
-              </span>
-              <h3 className="text-xl sm:text-2xl md:text-3xl text-[var(--text-main)] font-medium tracking-tight mb-3">
-                Let's connect & build modern web applications together.
-              </h3>
-              <p className="text-[var(--text-muted)] text-xs sm:text-sm leading-relaxed mb-6">
-                Available for software engineering opportunities, web development projects, and technical collaborations.
-              </p>
+          <div className="lg:col-span-5 flex flex-col gap-6 bg-[var(--bg-card)] backdrop-blur-2xl p-8 rounded-3xl border border-[var(--border-subtle)] hover:border-violet-500/50 shadow-2xl h-full justify-between relative overflow-hidden group transition-all duration-300 hover:shadow-violet-500/15">
+            {/* Top Gradient Line */}
+            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-violet-500 via-purple-400 to-indigo-400 opacity-90 group-hover:opacity-100 transition-opacity" />
+            <div className="absolute -top-24 -right-24 w-48 h-48 bg-gradient-to-br from-violet-500/20 via-purple-500/10 to-transparent rounded-full blur-2xl pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
 
-              {/* Direct Contact Links */}
-              <div className="flex flex-col gap-3 text-xs sm:text-sm font-mono text-[var(--text-main)] mb-8">
-                <a
-                  href="mailto:mdyeasifjanimishad@gmail.com"
-                  className="inline-flex items-center gap-3 p-3.5 rounded-2xl bg-[var(--bg-card-hover)] border border-[var(--border-subtle)] hover:border-primary/50 hover:text-primary transition-all duration-300"
-                >
-                  <Mail className="w-4 h-4 text-primary shrink-0" />
-                  <span className="truncate">mdyeasifjanimishad@gmail.com</span>
-                </a>
-                <a
-                  href="tel:+8801767655821"
-                  className="inline-flex items-center gap-3 p-3.5 rounded-2xl bg-[var(--bg-card-hover)] border border-[var(--border-subtle)] hover:border-primary/50 hover:text-primary transition-all duration-300"
-                >
-                  <Phone className="w-4 h-4 text-primary shrink-0" />
-                  <span>(+880) 1767655821</span>
-                </a>
+            <div className="relative z-10 flex flex-col justify-between h-full gap-6">
+              <div>
+                <span className="text-[10px] sm:text-xs uppercase tracking-widest text-violet-600 dark:text-violet-400 font-mono block mb-2 font-semibold">
+                  Contact & Opportunities
+                </span>
+                <h3 className="text-xl sm:text-2xl md:text-3xl text-[var(--text-main)] font-medium tracking-tight mb-3">
+                  Let's connect & build modern web applications together.
+                </h3>
+                <p className="text-[var(--text-muted)] text-xs sm:text-sm leading-relaxed mb-6">
+                  Available for software engineering opportunities, web development projects, and technical collaborations.
+                </p>
+
+                {/* Direct Contact Links */}
+                <div className="flex flex-col gap-3 text-xs sm:text-sm font-mono text-[var(--text-main)] mb-8">
+                  <a
+                    href="mailto:mdyeasifjanimishad@gmail.com"
+                    className="inline-flex items-center gap-3 p-3.5 rounded-2xl bg-[var(--bg-card-hover)] border border-[var(--border-subtle)] hover:border-violet-500/50 hover:bg-violet-500/15 hover:text-violet-600 dark:hover:text-violet-300 transition-all duration-300 shadow-sm"
+                  >
+                    <div className="p-2.5 rounded-xl bg-violet-500/15 border border-violet-500/30 text-violet-500">
+                      <Mail className="w-4 h-4 shrink-0" />
+                    </div>
+                    <span className="truncate">mdyeasifjanimishad@gmail.com</span>
+                  </a>
+                  <a
+                    href="tel:+8801767655821"
+                    className="inline-flex items-center gap-3 p-3.5 rounded-2xl bg-[var(--bg-card-hover)] border border-[var(--border-subtle)] hover:border-violet-500/50 hover:bg-violet-500/15 hover:text-violet-600 dark:hover:text-violet-300 transition-all duration-300 shadow-sm"
+                  >
+                    <div className="p-2.5 rounded-xl bg-violet-500/15 border border-violet-500/30 text-violet-500">
+                      <Phone className="w-4 h-4 shrink-0" />
+                    </div>
+                    <span>(+880) 1767655821</span>
+                  </a>
+                </div>
               </div>
-            </div>
 
-            {/* Social Links */}
-            <div className="pt-6 border-t border-[var(--border-subtle)]">
-              <span className="text-xs text-[var(--text-subtle)] font-mono uppercase tracking-wider block mb-3">
-                Social Profiles
-              </span>
-              <SocialLinks variant="pills" />
+              {/* Social Links */}
+              <div className="pt-6 border-t border-[var(--border-subtle)]">
+                <span className="text-xs text-violet-600 dark:text-violet-400 font-mono uppercase tracking-wider block mb-3 font-semibold">
+                  Social Profiles
+                </span>
+                <SocialLinks variant="pills" />
+              </div>
             </div>
           </div>
 

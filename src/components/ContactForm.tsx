@@ -58,14 +58,21 @@ export function ContactForm() {
   };
 
   return (
-    <div className="w-full bg-[var(--bg-card)] backdrop-blur-2xl rounded-3xl p-6 sm:p-8 md:p-10 border border-[var(--border-subtle)] shadow-2xl relative">
-      <div className="flex items-center gap-2 text-primary font-mono text-xs uppercase tracking-widest mb-2">
-        <Mail className="w-4 h-4" />
-        <span>Direct Message</span>
-      </div>
-      <h3 className="text-xl sm:text-2xl font-bold text-[var(--text-main)] mb-6">
-        Send an Instant Inquiry
-      </h3>
+    <div className="w-full bg-[var(--bg-card)] backdrop-blur-2xl rounded-3xl p-6 sm:p-8 md:p-10 border border-[var(--border-subtle)] hover:border-amber-500/50 shadow-2xl relative overflow-hidden group transition-all duration-300 hover:shadow-amber-500/15">
+      {/* Top Gradient Line */}
+      <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-amber-500 via-orange-400 to-rose-500 opacity-90 group-hover:opacity-100 transition-opacity" />
+      <div className="absolute -top-24 -right-24 w-48 h-48 bg-gradient-to-br from-amber-500/20 via-orange-500/10 to-transparent rounded-full blur-2xl pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
+
+      <div className="relative z-10">
+        <div className="flex items-center gap-2.5 text-amber-600 dark:text-amber-400 font-mono text-xs uppercase tracking-widest mb-2 font-semibold">
+          <div className="p-2.5 rounded-xl bg-amber-500/15 border border-amber-500/30">
+            <Mail className="w-4 h-4 text-amber-500" />
+          </div>
+          <span>Direct Message</span>
+        </div>
+        <h3 className="text-xl sm:text-2xl font-bold text-[var(--text-main)] mb-6">
+          Send an Instant Inquiry
+        </h3>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -192,6 +199,7 @@ export function ContactForm() {
           </motion.div>
         )}
       </AnimatePresence>
+      </div>
     </div>
   );
 }
