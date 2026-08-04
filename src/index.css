@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root, [data-theme="dark"], .dark-theme, .dark {
+  --color-primary: #DEDBC8;
+  --bg-page: transparent;
+  --bg-hero: #0a0a0a;
+  --bg-card: rgba(16, 16, 16, 0.65);
+  --bg-card-hover: rgba(28, 28, 28, 0.82);
+  --bg-card-alt: rgba(33, 33, 33, 0.70);
+  --bg-inner: rgba(22, 22, 22, 0.70);
+  --bg-badge: rgba(35, 35, 35, 0.75);
+  --bg-nav: rgba(10, 10, 10, 0.85);
+  --text-main: #F3F4F6;
+  --text-sub: #E5E7EB;
+  --text-muted: #9CA3AF;
+  --text-subtle: #6B7280;
+  --border-subtle: rgba(255, 255, 255, 0.12);
+  --border-medium: rgba(255, 255, 255, 0.22);
+  --border-strong: rgba(255, 255, 255, 0.35);
+  --shadow-color: rgba(0, 0, 0, 0.6);
+  --primary-accent: #DEDBC8;
+  --primary-bg-accent: rgba(222, 219, 200, 0.1);
+}
+
+[data-theme="light"], .light-theme, .light {
+  --color-primary: #7C550A;
+  --bg-page: transparent;
+  --bg-hero: #E6E1D4;
+  --bg-card: rgba(236, 230, 218, 0.92);
+  --bg-card-hover: rgba(243, 238, 227, 0.97);
+  --bg-card-alt: rgba(228, 221, 208, 0.90);
+  --bg-inner: rgba(222, 214, 200, 0.90);
+  --bg-badge: rgba(215, 207, 192, 0.92);
+  --bg-nav: rgba(234, 227, 214, 0.93);
+  --text-main: #111827;
+  --text-sub: #1F2937;
+  --text-muted: #374151;
+  --text-subtle: #4B5563;
+  --border-subtle: rgba(0, 0, 0, 0.10);
+  --border-medium: rgba(0, 0, 0, 0.18);
+  --border-strong: rgba(0, 0, 0, 0.28);
+  --shadow-color: rgba(0, 0, 0, 0.08);
+  --primary-accent: #7C550A;
+  --primary-bg-accent: rgba(124, 85, 10, 0.12);
+}
+
+@theme {
+  --color-primary: var(--color-primary);
+  --font-serif: "Instrument Serif", serif;
+  --font-sans: "Almarai", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+}
+
+* {
+  font-family: 'Almarai', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.font-serif {
+  font-family: 'Instrument Serif', serif !important;
+  font-style: italic !important;
+}
+
+.noise-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-cursor-blink {
+  animation: cursor-blink 0.8s step-end infinite;
+}
+
+

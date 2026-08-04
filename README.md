@@ -1,11 +1,26 @@
-<div align="center">
+About Me
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+I am currently pursuing a B.Sc. in Software Engineering at Daffodil International University and gaining hands-on industry experience through an internship program. I am passionate about software development, web technologies, and continuous learning.
 
-  <h1>Built with AI Studio</h2>
+Features
+Responsive and modern design
+Professional introduction section
+Skills showcase
+Project portfolio
+Education and experience details
+Contact information
+Clean and user-friendly interface
+Technologies Used
+HTML5
+CSS3
+JavaScript
+Bootstrap / Tailwind CSS (if applicable)
+Live Demo
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+🔗 Portfolio Link: https://mishad-s-portfolio.vercel.app/
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+Author
 
-</div>
+MD. Yeasif Mishad
+
+"Driven by faith, inspired by innovation, and committed to building impactful software solutions."
