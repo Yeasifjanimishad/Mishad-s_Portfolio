@@ -17,7 +17,7 @@ JavaScript
 Bootstrap / Tailwind CSS (if applicable)
 Live Demo
 
-🔗 Portfolio Link: https://mishad-s-portfolio.vercel.app/
+🔗 Portfolio Link: mishad-s-portfolio-y837.vercel.app
 
 Author
 
