@@ -1,26 +1,19 @@
-About Me
+👋 About Me
 
-I am currently pursuing a B.Sc. in Software Engineering at Daffodil International University and gaining hands-on industry experience through an internship program. I am passionate about software development, web technologies, and continuous learning.
+Hi, I'm **Yeasif Jani Mishad**, a Software Engineering student and an aspiring Full-Stack Web Developer. I'm passionate about building clean, responsive, and user-friendly web applications that solve real-world problems.
 
-Features
-Responsive and modern design
-Professional introduction section
-Skills showcase
-Project portfolio
-Education and experience details
-Contact information
-Clean and user-friendly interface
-Technologies Used
-HTML5
-CSS3
-JavaScript
-Bootstrap / Tailwind CSS (if applicable)
-Live Demo
+This portfolio showcases some of my projects, technical skills, and learning journey. I enjoy working with modern web technologies and continuously improving my development skills by building practical applications.
 
-🔗 Portfolio Link: mishad-s-portfolio-y837.vercel.app
+### 🚀 Tech Stack
 
-Author
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* JavaScript
+* HTML5 & CSS3
+* Git & GitHub
 
-MD. Yeasif Mishad
+I'm always open to learning new technologies, collaborating on interesting projects, and contributing to the developer community.
 
-"Driven by faith, inspired by innovation, and committed to building impactful software solutions."
+⭐ If you like this project, feel free to star the repository!
