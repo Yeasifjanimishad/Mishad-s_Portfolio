@@ -147,7 +147,7 @@ export function FeaturesSection() {
             </div>
 
             {/* Learn More & Discover Links */}
-            <div className="mt-6 pt-4 border-t border-[var(--border-subtle)] flex items-center justify-between gap-3">
+            <div className="mt-6 pt-4 border-t border-[var(--border-subtle)] flex items-center justify-between gap-2 flex-wrap">
               <button
                 onClick={() => openProjectModal('elite-mess')}
                 className="inline-flex items-center gap-1.5 text-primary text-xs sm:text-sm font-medium hover:gap-2 transition-all duration-300"
@@ -155,15 +155,26 @@ export function FeaturesSection() {
                 <Info className="w-3.5 h-3.5" />
                 <span>Details</span>
               </button>
-              <a
-                href="https://github.com/Yeasifjanimishad/Elite-Mess-Management/tree/main#-elite-mess-management-system"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-primary text-xs sm:text-sm font-medium hover:gap-2.5 transition-all duration-300"
-              >
-                <span>GitHub</span>
-                <ArrowRight className="w-3.5 h-3.5 rotate-[-45deg]" />
-              </a>
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://elite-mess-management.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/25 transition-all duration-300 text-xs font-semibold shadow-sm"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" />
+                  <span>Check</span>
+                </a>
+                <a
+                  href="https://github.com/Yeasifjanimishad/Elite-Mess-Management/tree/main#-elite-mess-management-system"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-primary text-xs sm:text-sm font-medium hover:gap-2.5 transition-all duration-300"
+                >
+                  <span>GitHub</span>
+                  <ArrowRight className="w-3.5 h-3.5 rotate-[-45deg]" />
+                </a>
+              </div>
             </div>
           </motion.div>
 

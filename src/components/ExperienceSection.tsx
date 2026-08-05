@@ -31,28 +31,28 @@ export function ExperienceSection() {
           {profileData.experience.map((exp, idx) => {
             const accents = [
               {
-                gradient: 'from-amber-500/25 via-orange-500/10 to-transparent',
+                gradient: 'from-amber-500/20 via-orange-500/10 to-transparent',
                 border: 'group-hover:border-amber-500/50',
                 glow: 'group-hover:shadow-amber-500/15',
-                badge: 'bg-amber-500/15 text-amber-600 dark:text-amber-400 border-amber-500/30',
+                badge: 'bg-amber-100/80 dark:bg-amber-500/15 text-amber-700 dark:text-amber-300 border-amber-200 dark:border-amber-500/30',
                 topLine: 'from-amber-500 via-orange-400 to-yellow-400',
-                iconColor: 'text-amber-500',
+                iconColor: 'text-amber-600 dark:text-amber-400',
               },
               {
-                gradient: 'from-blue-500/25 via-indigo-500/10 to-transparent',
+                gradient: 'from-blue-500/20 via-indigo-500/10 to-transparent',
                 border: 'group-hover:border-blue-500/50',
                 glow: 'group-hover:shadow-blue-500/15',
-                badge: 'bg-blue-500/15 text-blue-600 dark:text-blue-400 border-blue-500/30',
+                badge: 'bg-blue-100/80 dark:bg-blue-500/15 text-blue-700 dark:text-blue-300 border-blue-200 dark:border-blue-500/30',
                 topLine: 'from-blue-500 via-indigo-400 to-cyan-400',
-                iconColor: 'text-blue-500',
+                iconColor: 'text-blue-600 dark:text-blue-400',
               },
               {
-                gradient: 'from-emerald-500/25 via-teal-500/10 to-transparent',
+                gradient: 'from-emerald-500/20 via-teal-500/10 to-transparent',
                 border: 'group-hover:border-emerald-500/50',
                 glow: 'group-hover:shadow-emerald-500/15',
-                badge: 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border-emerald-500/30',
+                badge: 'bg-emerald-100/80 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-500/30',
                 topLine: 'from-emerald-500 via-teal-400 to-green-400',
-                iconColor: 'text-emerald-500',
+                iconColor: 'text-emerald-600 dark:text-emerald-400',
               },
             ][idx % 3];
 

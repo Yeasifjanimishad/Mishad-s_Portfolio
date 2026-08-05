@@ -52,8 +52,8 @@ export function EducationSection() {
                     <h4 className="text-base sm:text-lg font-medium text-[var(--text-main)] transition-colors">
                       {edu.degree}
                     </h4>
-                    <span className="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-600 dark:text-emerald-400 bg-emerald-500/15 px-3 py-1 rounded-full border border-emerald-500/30 shrink-0 w-fit font-semibold shadow-sm">
-                      <Calendar className="w-3 h-3 text-emerald-500" />
+                    <span className="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-800 dark:text-emerald-300 bg-emerald-100/80 dark:bg-emerald-500/15 px-3 py-1 rounded-full border border-emerald-200 dark:border-emerald-500/30 shrink-0 w-fit font-semibold shadow-sm">
+                      <Calendar className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
                       {edu.period}
                     </span>
                   </div>
@@ -70,8 +70,8 @@ export function EducationSection() {
                   <div className="flex flex-wrap items-center justify-between gap-2 pt-3 border-t border-[var(--border-subtle)] text-xs text-[var(--text-muted)]">
                     <div className="flex items-center gap-3">
                       {edu.grade && (
-                        <span className="inline-flex items-center gap-1.5 text-emerald-700 dark:text-emerald-300 font-semibold bg-emerald-500/20 px-3 py-1 rounded-full border border-emerald-500/35 shadow-sm">
-                          <CheckCircle className="w-3.5 h-3.5 text-emerald-500" />
+                        <span className="inline-flex items-center gap-1.5 text-emerald-800 dark:text-emerald-300 font-semibold bg-emerald-100/80 dark:bg-emerald-500/20 px-3 py-1 rounded-full border border-emerald-200 dark:border-emerald-500/35 shadow-sm">
+                          <CheckCircle className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
                           {edu.grade}
                         </span>
                       )}
@@ -83,7 +83,7 @@ export function EducationSection() {
                         href={edu.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 text-xs text-emerald-600 dark:text-emerald-400 hover:underline transition-colors font-mono ml-auto font-medium"
+                        className="inline-flex items-center gap-1.5 text-xs text-emerald-700 dark:text-emerald-400 hover:underline transition-colors font-mono ml-auto font-medium"
                       >
                         <span>Institution Link</span>
                         <ExternalLink className="w-3 h-3" />
@@ -115,13 +115,13 @@ export function EducationSection() {
                     transition={{ duration: 0.5, delay: 0.3 + aIdx * 0.1, ease: [0.16, 1, 0.3, 1] }}
                     className="p-4 rounded-2xl bg-[var(--bg-card-hover)] border border-[var(--border-subtle)] hover:border-amber-500/40 transition-all duration-200 flex items-start gap-3.5 shadow-sm"
                   >
-                    <div className="p-2.5 rounded-xl bg-amber-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/30 shrink-0 mt-0.5 shadow-sm">
-                      <Award className="w-4 h-4 text-amber-500" />
+                    <div className="p-2.5 rounded-xl bg-amber-100/80 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-500/30 shrink-0 mt-0.5 shadow-sm">
+                      <Award className="w-4 h-4 text-amber-600 dark:text-amber-400" />
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold text-[var(--text-main)]">{award.title}</h4>
                       <p className="text-xs text-[var(--text-muted)] mt-0.5 font-mono">{award.institution}</p>
-                      <span className="text-[10px] text-amber-600 dark:text-amber-400 font-mono mt-1 inline-block bg-amber-500/15 px-2.5 py-0.5 rounded-full border border-amber-500/30 font-semibold">{award.date}</span>
+                      <span className="text-[10px] text-amber-800 dark:text-amber-300 font-mono mt-1 inline-block bg-amber-100/80 dark:bg-amber-500/15 px-2.5 py-0.5 rounded-full border border-amber-200 dark:border-amber-500/30 font-semibold">{award.date}</span>
                     </div>
                   </motion.div>
                 ))}

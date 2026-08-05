@@ -26,9 +26,9 @@ export function ProfileDetailsSection() {
             <div className="absolute -top-24 -right-24 w-48 h-48 bg-gradient-to-br from-indigo-500/20 via-blue-500/10 to-transparent rounded-full blur-2xl pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
 
             <div className="relative z-10">
-              <div className="flex items-center gap-2.5 text-indigo-600 dark:text-indigo-400 font-mono text-xs uppercase tracking-widest mb-6 font-semibold">
-                <div className="p-2 rounded-xl bg-indigo-500/15 border border-indigo-500/30">
-                  <Languages className="w-4 h-4 text-indigo-500" />
+              <div className="flex items-center gap-2.5 text-indigo-700 dark:text-indigo-400 font-mono text-xs uppercase tracking-widest mb-6 font-semibold">
+                <div className="p-2.5 rounded-xl bg-indigo-100/80 dark:bg-indigo-500/15 border border-indigo-200 dark:border-indigo-500/30 shadow-sm">
+                  <Languages className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
                 </div>
                 <span>Languages Proficiency</span>
               </div>
@@ -40,10 +40,10 @@ export function ProfileDetailsSection() {
                     className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 p-3.5 rounded-2xl bg-[var(--bg-card-hover)] border border-[var(--border-subtle)] hover:border-indigo-500/40 transition-all duration-200 shadow-sm"
                   >
                     <span className="text-sm font-medium text-[var(--text-main)] flex items-center gap-2.5">
-                      <Check className="w-4 h-4 text-indigo-500 shrink-0" />
+                      <Check className="w-4 h-4 text-indigo-600 dark:text-indigo-400 shrink-0" />
                       {lang.language}
                     </span>
-                    <span className="text-xs font-mono text-indigo-600 dark:text-indigo-300 bg-indigo-500/15 px-3 py-1 rounded-full border border-indigo-500/30 font-semibold">{lang.level}</span>
+                    <span className="text-xs font-mono text-indigo-700 dark:text-indigo-300 bg-indigo-100/80 dark:bg-indigo-500/15 px-3 py-1 rounded-full border border-indigo-200 dark:border-indigo-500/30 font-semibold">{lang.level}</span>
                   </div>
                 ))}
               </div>
@@ -62,9 +62,9 @@ export function ProfileDetailsSection() {
             <div className="absolute -top-24 -right-24 w-48 h-48 bg-gradient-to-br from-rose-500/20 via-pink-500/10 to-transparent rounded-full blur-2xl pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
 
             <div className="relative z-10">
-              <div className="flex items-center gap-2.5 text-rose-600 dark:text-rose-400 font-mono text-xs uppercase tracking-widest mb-6 font-semibold">
-                <div className="p-2 rounded-xl bg-rose-500/15 border border-rose-500/30">
-                  <Heart className="w-4 h-4 text-rose-500" />
+              <div className="flex items-center gap-2.5 text-rose-700 dark:text-rose-400 font-mono text-xs uppercase tracking-widest mb-6 font-semibold">
+                <div className="p-2.5 rounded-xl bg-rose-100/80 dark:bg-rose-500/15 border border-rose-200 dark:border-rose-500/30 shadow-sm">
+                  <Heart className="w-4 h-4 text-rose-600 dark:text-rose-400" />
                 </div>
                 <span>Personal Interests & Activities</span>
               </div>
@@ -77,7 +77,7 @@ export function ProfileDetailsSection() {
                 {profileData.hobbies.map((hobby) => (
                   <span
                     key={hobby}
-                    className="px-4 py-2 rounded-2xl bg-[var(--bg-card-hover)] border border-[var(--border-subtle)] text-xs sm:text-sm text-[var(--text-main)] font-mono flex items-center gap-2 hover:border-rose-500/40 hover:bg-rose-500/15 transition-all duration-200 shadow-sm"
+                    className="px-4 py-2 rounded-2xl bg-[var(--bg-card-hover)] border border-[var(--border-subtle)] text-xs sm:text-sm text-[var(--text-main)] font-mono flex items-center gap-2 hover:border-rose-500/40 hover:bg-rose-100/80 dark:hover:bg-rose-500/15 transition-all duration-200 shadow-sm"
                   >
                     <span className="w-2 h-2 rounded-full bg-rose-500 shadow-sm" />
                     {hobby}

@@ -64,9 +64,9 @@ export function ContactForm() {
       <div className="absolute -top-24 -right-24 w-48 h-48 bg-gradient-to-br from-amber-500/20 via-orange-500/10 to-transparent rounded-full blur-2xl pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
 
       <div className="relative z-10">
-        <div className="flex items-center gap-2.5 text-amber-600 dark:text-amber-400 font-mono text-xs uppercase tracking-widest mb-2 font-semibold">
-          <div className="p-2.5 rounded-xl bg-amber-500/15 border border-amber-500/30">
-            <Mail className="w-4 h-4 text-amber-500" />
+        <div className="flex items-center gap-2.5 text-amber-700 dark:text-amber-400 font-mono text-xs uppercase tracking-widest mb-2 font-semibold">
+          <div className="p-2.5 rounded-xl bg-amber-100/80 dark:bg-amber-500/15 border border-amber-200 dark:border-amber-500/30 shadow-sm">
+            <Mail className="w-4 h-4 text-amber-600 dark:text-amber-400" />
           </div>
           <span>Direct Message</span>
         </div>

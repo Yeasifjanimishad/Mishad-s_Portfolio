@@ -63,7 +63,7 @@ export function HeroSection() {
                   delay: 0.5,
                   ease: [0.16, 1, 0.3, 1],
                 }}
-                className="text-primary/90 text-xs sm:text-sm md:text-base leading-relaxed max-w-md font-mono"
+                className="text-slate-200 text-xs sm:text-sm md:text-base leading-relaxed max-w-md font-mono"
               >
                 <TypewriterText
                   text="Full-Stack Web Developer, and intern passionate about building modern web applications and solving real-world challenges through technology."
@@ -85,11 +85,11 @@ export function HeroSection() {
               >
                 <button
                   onClick={handleJoinLab}
-                  className="bg-primary hover:bg-[#eae7d8] text-black font-medium text-sm sm:text-base pl-5 pr-1.5 py-1.5 sm:pl-6 sm:pr-2 sm:py-2 rounded-full inline-flex items-center gap-2 hover:gap-3 transition-all duration-300 group cursor-pointer shadow-lg"
+                  className="bg-white hover:bg-slate-200 text-slate-950 font-medium text-sm sm:text-base pl-5 pr-1.5 py-1.5 sm:pl-6 sm:pr-2 sm:py-2 rounded-full inline-flex items-center gap-2 hover:gap-3 transition-all duration-300 group cursor-pointer shadow-lg"
                 >
                   <span>Let's go...</span>
-                  <div className="bg-black rounded-full w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                    <ArrowRight className="text-[#E1E0CC] w-4 h-4 sm:w-5 sm:h-5" />
+                  <div className="bg-slate-950 rounded-full w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                    <ArrowRight className="text-white w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                 </button>
 

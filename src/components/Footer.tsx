@@ -16,7 +16,7 @@ export function Footer() {
 
             <div className="relative z-10 flex flex-col justify-between h-full gap-6">
               <div>
-                <span className="text-[10px] sm:text-xs uppercase tracking-widest text-violet-600 dark:text-violet-400 font-mono block mb-2 font-semibold">
+                <span className="text-[10px] sm:text-xs uppercase tracking-widest text-violet-700 dark:text-violet-400 font-mono block mb-2 font-semibold">
                   Contact & Opportunities
                 </span>
                 <h3 className="text-xl sm:text-2xl md:text-3xl text-[var(--text-main)] font-medium tracking-tight mb-3">
@@ -30,18 +30,18 @@ export function Footer() {
                 <div className="flex flex-col gap-3 text-xs sm:text-sm font-mono text-[var(--text-main)] mb-8">
                   <a
                     href="mailto:mdyeasifjanimishad@gmail.com"
-                    className="inline-flex items-center gap-3 p-3.5 rounded-2xl bg-[var(--bg-card-hover)] border border-[var(--border-subtle)] hover:border-violet-500/50 hover:bg-violet-500/15 hover:text-violet-600 dark:hover:text-violet-300 transition-all duration-300 shadow-sm"
+                    className="inline-flex items-center gap-3 p-3.5 rounded-2xl bg-[var(--bg-card-hover)] border border-[var(--border-subtle)] hover:border-violet-500/50 hover:bg-violet-100/70 dark:hover:bg-violet-500/15 hover:text-violet-700 dark:hover:text-violet-300 transition-all duration-300 shadow-sm"
                   >
-                    <div className="p-2.5 rounded-xl bg-violet-500/15 border border-violet-500/30 text-violet-500">
+                    <div className="p-2.5 rounded-xl bg-violet-100/80 dark:bg-violet-500/15 border border-violet-200 dark:border-violet-500/30 text-violet-600 dark:text-violet-400">
                       <Mail className="w-4 h-4 shrink-0" />
                     </div>
                     <span className="truncate">mdyeasifjanimishad@gmail.com</span>
                   </a>
                   <a
                     href="tel:+8801767655821"
-                    className="inline-flex items-center gap-3 p-3.5 rounded-2xl bg-[var(--bg-card-hover)] border border-[var(--border-subtle)] hover:border-violet-500/50 hover:bg-violet-500/15 hover:text-violet-600 dark:hover:text-violet-300 transition-all duration-300 shadow-sm"
+                    className="inline-flex items-center gap-3 p-3.5 rounded-2xl bg-[var(--bg-card-hover)] border border-[var(--border-subtle)] hover:border-violet-500/50 hover:bg-violet-100/70 dark:hover:bg-violet-500/15 hover:text-violet-700 dark:hover:text-violet-300 transition-all duration-300 shadow-sm"
                   >
-                    <div className="p-2.5 rounded-xl bg-violet-500/15 border border-violet-500/30 text-violet-500">
+                    <div className="p-2.5 rounded-xl bg-violet-100/80 dark:bg-violet-500/15 border border-violet-200 dark:border-violet-500/30 text-violet-600 dark:text-violet-400">
                       <Phone className="w-4 h-4 shrink-0" />
                     </div>
                     <span>(+880) 1767655821</span>

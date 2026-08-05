@@ -33,6 +33,7 @@ export const projectsData: ProjectDetail[] = [
     ],
     techStack: ['JavaScript', 'HTML5', 'CSS3', 'Node.js', 'Express', 'Chart.js'],
     githubUrl: 'https://github.com/Yeasifjanimishad/Elite-Mess-Management/tree/main#-elite-mess-management-system',
+    demoUrl: 'https://elite-mess-management.vercel.app/',
     status: 'Active / Open Source',
     features: [
       {

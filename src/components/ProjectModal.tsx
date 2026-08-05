@@ -120,17 +120,30 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           </div>
 
           {/* Footer CTAs */}
-          <div className="pt-6 border-t border-[var(--border-subtle)] flex flex-wrap items-center justify-between gap-4">
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-black font-medium text-xs sm:text-sm hover:opacity-90 transition-all duration-200 shadow-md"
-            >
-              <Github className="w-4 h-4" />
-              <span>View Source Code</span>
-              <ExternalLink className="w-3.5 h-3.5" />
-            </a>
+          <div className="pt-6 border-t border-[var(--border-subtle)] flex flex-wrap items-center justify-between gap-3">
+            <div className="flex items-center gap-3 flex-wrap">
+              {project.demoUrl && (
+                <a
+                  href={project.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 border border-emerald-500/40 hover:bg-emerald-500/30 font-semibold text-xs sm:text-sm transition-all duration-200 shadow-md"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  <span>Check Live Application</span>
+                </a>
+              )}
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-black font-medium text-xs sm:text-sm hover:opacity-90 transition-all duration-200 shadow-md"
+              >
+                <Github className="w-4 h-4" />
+                <span>View Source Code</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            </div>
 
             <button
               onClick={onClose}

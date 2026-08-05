@@ -39,7 +39,7 @@ export default function App() {
             />
           </video>
           <div className="noise-overlay absolute inset-0 opacity-[0.25] mix-blend-overlay" />
-          <div className="absolute inset-0 bg-[#ECE7DA]/92 dark:bg-black/60 backdrop-blur-[2px] transition-colors duration-300" />
+          <div className="absolute inset-0 bg-[#F1F5F9]/88 dark:bg-black/60 backdrop-blur-[2px] transition-colors duration-300" />
         </div>
 
         {/* SECTION 1: HERO */}
