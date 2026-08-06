@@ -1,4 +1,5 @@
 import { ThemeProvider } from './context/ThemeContext';
+import { Preloader } from './components/Preloader';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
 import { ExperienceSection } from './components/ExperienceSection';
@@ -16,6 +17,9 @@ import { GlobalAudioListener } from './components/GlobalAudioListener';
 export default function App() {
   return (
     <ThemeProvider>
+      {/* Intro Preloader Splash Screen */}
+      <Preloader />
+
       <GlobalAudioListener />
       <div className="relative min-h-screen text-[var(--text-main)] selection:bg-[#DEDBC8] selection:text-black font-sans antialiased transition-colors duration-300">
         {/* Scroll Progress Bar & Floating Top Button */}
