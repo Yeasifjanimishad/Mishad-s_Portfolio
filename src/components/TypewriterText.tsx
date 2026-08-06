@@ -6,6 +6,7 @@ interface TypewriterTextProps {
   text: string;
   speed?: number;
   delay?: number;
+  start?: boolean;
   className?: string;
   cursorChar?: string;
   triggerOnce?: boolean;
@@ -15,6 +16,7 @@ export function TypewriterText({
   text,
   speed = 30,
   delay = 200,
+  start = true,
   className = '',
   cursorChar = '|',
   triggerOnce = true,
@@ -24,7 +26,7 @@ export function TypewriterText({
   const isInView = useInView(containerRef, { once: triggerOnce, amount: 0.2 });
 
   useEffect(() => {
-    if (!isInView) return;
+    if (!isInView || !start) return;
 
     setDisplayedText('');
     let currentIndex = 0;
@@ -43,7 +45,7 @@ export function TypewriterText({
     }, delay);
 
     return () => clearTimeout(delayTimeout);
-  }, [isInView, text, speed, delay]);
+  }, [isInView, start, text, speed, delay]);
 
   return (
     <span ref={containerRef} className={className}>

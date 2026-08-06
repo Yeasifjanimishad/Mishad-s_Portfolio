@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import { Preloader } from './components/Preloader';
 import { HeroSection } from './components/HeroSection';
@@ -15,10 +16,12 @@ import { ScrollProgress } from './components/ScrollProgress';
 import { GlobalAudioListener } from './components/GlobalAudioListener';
 
 export default function App() {
+  const [isIntroFinished, setIsIntroFinished] = useState(false);
+
   return (
     <ThemeProvider>
       {/* Intro Preloader Splash Screen */}
-      <Preloader />
+      <Preloader onComplete={() => setIsIntroFinished(true)} />
 
       <GlobalAudioListener />
       <div className="relative min-h-screen text-[var(--text-main)] selection:bg-[#DEDBC8] selection:text-black font-sans antialiased transition-colors duration-300">
@@ -47,7 +50,7 @@ export default function App() {
         </div>
 
         {/* SECTION 1: HERO */}
-        <HeroSection />
+        <HeroSection isIntroFinished={isIntroFinished} />
 
         {/* SECTION 2: ABOUT */}
         <AboutSection />

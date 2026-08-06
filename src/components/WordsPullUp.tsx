@@ -6,6 +6,7 @@ interface WordsPullUpProps {
   className?: string;
   showAsterisk?: boolean;
   delayOffset?: number;
+  start?: boolean;
 }
 
 export function WordsPullUp({
@@ -13,9 +14,11 @@ export function WordsPullUp({
   className = '',
   showAsterisk = false,
   delayOffset = 0,
+  start = true,
 }: WordsPullUpProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(containerRef, { once: true, margin: '-50px' });
+  const shouldAnimate = isInView && start;
 
   const words = text.split(' ');
 
@@ -29,7 +32,7 @@ export function WordsPullUp({
           <motion.span
             key={index}
             initial={{ y: 20, opacity: 0 }}
-            animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
+            animate={shouldAnimate ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
             transition={{
               duration: 0.6,
               delay: delayOffset + index * 0.08,

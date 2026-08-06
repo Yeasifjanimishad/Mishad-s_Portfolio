@@ -5,7 +5,11 @@ import { Navbar } from './Navbar';
 import { SocialLinks } from './SocialLinks';
 import { TypewriterText } from './TypewriterText';
 
-export function HeroSection() {
+interface HeroSectionProps {
+  isIntroFinished?: boolean;
+}
+
+export function HeroSection({ isIntroFinished = true }: HeroSectionProps) {
   const handleJoinLab = () => {
     const featuresSection = document.querySelector('#features');
     if (featuresSection) {
@@ -48,6 +52,7 @@ export function HeroSection() {
               <WordsPullUp
                 text="Mishad"
                 showAsterisk={false}
+                start={isIntroFinished}
                 className="text-[19vw] sm:text-[17vw] md:text-[15vw] lg:text-[13vw] xl:text-[12vw] 2xl:text-[11.5vw] font-medium leading-[0.88] tracking-[-0.06em] text-[#E1E0CC] select-none"
               />
             </div>
@@ -57,10 +62,10 @@ export function HeroSection() {
               {/* Description Paragraph */}
               <motion.p
                 initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
+                animate={isIntroFinished ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
                 transition={{
                   duration: 0.8,
-                  delay: 0.5,
+                  delay: 0.2,
                   ease: [0.16, 1, 0.3, 1],
                 }}
                 className="text-slate-200 text-xs sm:text-sm md:text-base leading-relaxed max-w-md font-mono"
@@ -68,17 +73,18 @@ export function HeroSection() {
                 <TypewriterText
                   text="Full-Stack Web Developer, and intern passionate about building modern web applications and solving real-world challenges through technology."
                   speed={25}
-                  delay={600}
+                  delay={300}
+                  start={isIntroFinished}
                 />
               </motion.p>
 
               {/* CTA Button "Join the lab" & Social Profiles */}
               <motion.div
                 initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
+                animate={isIntroFinished ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
                 transition={{
                   duration: 0.8,
-                  delay: 0.7,
+                  delay: 0.4,
                   ease: [0.16, 1, 0.3, 1],
                 }}
                 className="flex flex-wrap items-center gap-4"
